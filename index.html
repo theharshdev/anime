@@ -1,0 +1,3073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+  npx tailwindcss -i ./src/input.css -o ./dist/assets/css/output.css --watch 
+  -->
+
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Google Font CDN Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CSS File Link -->
+    <link href="assets/css/bootstrap-icon.css" rel="stylesheet" />
+    <!-- Tailwind CSS File Link -->
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <!-- Custom CSS File Link -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Harsh Kushwaha | Frontend Developer</title>
+  </head>
+
+  <body class="bg-zinc-950">
+    <!-- All works & project popup -->
+    <div
+      id="allWorkPopup"
+      class="w-full h-screen fixed top-0 left-0 z-[999] overflow-auto bg-black/50 backdrop-blur-md hidden"
+    >
+      <button
+        id="closeAllWorkPopup"
+        type="button"
+        class="text-zinc-400 hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale"
+      >
+        <i class="bi bi-x-lg cursorScale"></i>
+      </button>
+      <div class="container mx-auto py-14 px-4">
+        <div class="flex justify-center mb-10">
+          <div class="lg:w-1/2 sm:w-2/3 w-full text-center">
+            <h3
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-2xl font-extrabold uppercase inline-block"
+            >
+              Work gallery
+            </h3>
+            <p class="text-sm font-normal text-zinc-300 mt-2">
+              Lorem ipsum dolor sit amet conse adipisi ullam error numquam totam
+              autem obcaecati sunt recusae animi nostrum.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap md:justify-start justify-center">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work1.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work2.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work3.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work5.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work6.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work7.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work8.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work9.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work10.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work11.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work12.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work13.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work14.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+            <div
+              class="relative overflow-hidden border border-white/10 rounded-lg"
+            >
+              <h3
+                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <img
+                src="assets/images/work15.jpg"
+                alt="..."
+                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+              />
+              <!-- Button -->
+              <button
+                type="button"
+                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >View<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Work popup box -->
+    <div
+      id="workPopup"
+      class="w-full hidden h-screen fixed top-0 left-0 z-[9999] overflow-auto bg-black backdrop-blur-md"
+    >
+      <button
+        id="closeWorkPopup"
+        type="button"
+        class="text-white hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale p-2 z-20"
+      >
+        <i class="bi bi-x-lg cursorScale"></i>
+      </button>
+      <div
+        id="workPopupBg"
+        class="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 w-full min-h-[85vh] lg:p-10 md:p-9 sm:p-8 p-5"
+      ></div>
+      <div class="container mx-auto py-20 px-4">
+        <div class="flex items-center">
+          <div class="lg:w-1/2 sm:w-2/3 w-full relative z-10">
+            <h3
+              id="mainHeading"
+              class="text-white font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-4xl"
+            ></h3>
+            <p
+              id="smallDescription"
+              class="text-zinc-300 text-sm font-light mt-6"
+            ></p>
+          </div>
+        </div>
+        <div class="mt-32 relative z-10">
+          <h3
+            class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase"
+          >
+            experiences
+          </h3>
+          <h3
+            id="experiences"
+            class="text-zinc-300 font-light lg:text-lg sm:text-base text-sm"
+          ></h3>
+          <h3
+            class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase mt-20"
+          >
+            preview
+          </h3>
+          <div class="flex flex-wrap mt-12">
+            <div id="preview1" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+            <div id="preview2" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+            <div id="preview3" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+            <div id="preview4" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+            <div id="preview5" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+          </div>
+          <div class="mt-20">
+            <h3
+              class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase"
+            >
+              Description
+            </h3>
+            <p id="description" class="text-zinc-300 text-base font-light"></p>
+            <div class="flex justify-end mt-24">
+              <!-- button -->
+              <a
+                id="livePreviewLink"
+                href="#"
+                class="py-3 px-10 rounded-md text-white text-base font-medium cursorScale uppercase relative group overflow-hidden inline-block h-14 transition-all bg-transparent backdrop-blur-md border border-white/10"
+              >
+                <span
+                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                  >live preview<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >live preview<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                  >live preview<i
+                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                  ></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cursor -->
+    <div class="sm:block hidden">
+      <div class="hidden" id="mainCursorBox">
+        <div
+          id="cursorBall"
+          class="w-8 h-8 rounded-full bg-violet-500 flex justify-center items-center fixed pointer-events-none z-[99999] -translate-x-1/2 -translate-y-1/2 mix-blend-screen"
+        ></div>
+        <div
+          id="ring"
+          class="w-12 h-12 rounded-full border-white/20 border bg-transparent fixed pointer-events-none z-[99999] -translate-x-1/2 -translate-y-1/2"
+        ></div>
+        <div
+          id="smallBall"
+          class="bg-white w-[6px] h-[6px] rounded-full fixed pointer-events-none z-[99999] -translate-x-1/2 -translate-y-1/2"
+        ></div>
+      </div>
+    </div>
+    <!-- Lines -->
+    <div
+      class="flex justify-between lg:px-20 md:px-10 sm:px-8 px-6 fixed top-0 left-0 w-full h-screen -z-50"
+    >
+      <div class="w-[1px] bg-white/10 h-screen"></div>
+      <div class="w-[1px] bg-white/10 h-screen"></div>
+      <div class="w-[1px] bg-white/10 h-screen"></div>
+      <div class="w-[1px] bg-white/10 h-screen md:block hidden"></div>
+    </div>
+    <!-- Socials -->
+    <div class="-left-5 top-1/2 -translate-y-1/2 fixed z-50">
+      <a
+        href="#"
+        class="text-[10px] font-normal text-white cursorScale uppercase block -rotate-90 transition-all mb-14"
+      >
+        Twitter
+      </a>
+      <a
+        href="#"
+        class="text-[10px] font-normal text-white cursorScale uppercase block -rotate-90 transition-all mb-16"
+      >
+        linkedin
+      </a>
+      <a
+        href="#"
+        class="text-[10px] font-normal text-white cursorScale uppercase block -rotate-90 transition-all mb-12"
+      >
+        whatsapp
+      </a>
+      <a
+        href="#"
+        class="text-[10px] font-normal text-white cursorScale uppercase block -rotate-90 transition-all"
+      >
+        gtihub
+      </a>
+    </div>
+    <!-- Navbar -->
+    <div class="fixed top-0 w-full z-50">
+      <div class="container mx-auto py-3">
+        <div class="flex items-center sm:justify-between justify-start">
+          <button
+            id="togglemenu"
+            type="button"
+            class="text-xs uppercase text-white font-medium leading-3 cursorScale togglemenu relative z-50 p-3"
+          >
+            Menu
+          </button>
+          <div class="sm:flex flex-wrap items-center justify-end hidden">
+            <!-- Button -->
+            <a
+              href="#services"
+              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+            >
+              <span class="opacity-0 cursorScale whitespace-nowrap"
+                >services</span
+              >
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale whitespace-nowrap"
+                >services</span
+              >
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale whitespace-nowrap"
+                >services</span
+              >
+            </a>
+            <!-- Button -->
+            <a
+              href="#work"
+              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+            >
+              <span class="opacity-0 cursorScale">work</span>
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale"
+                >work</span
+              >
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale"
+                >work</span
+              >
+            </a>
+            <!-- Button -->
+            <a
+              href="#contact"
+              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+            >
+              <span class="opacity-0 cursorScale">Contact</span>
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale"
+                >Contact</span
+              >
+              <span
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale"
+                >Contact</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div
+      id="navBar"
+      class="fixed sm:w-[500px] w-full top-0 left-0 -translate-x-full overflow-hidden lg:ps-10 sm:ps-8 ps-4 h-screen bg-gradient-to-tr from-black/80 to-violet-950/80 backdrop-blur-[8px] shadow-2xl shadow-black z-30"
+    >
+      <div class="container mx-auto py-20 px-4 relative">
+        <div
+          class="text-white sm:text-5xl text-4xl font-bold uppercase relative overflow-hidden mt-10 sm:mb-2 mb-1"
+        >
+          <a
+            href="#home"
+            class="group block w-full sm:h-12 h-10 overflow-hidden cursorScale"
+          >
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 myTransition group-hover:top-0 group-hover:-translate-y-full cursorScale"
+            >
+              Home
+            </span>
+            <span
+              class="text-violet-500 absolute left-0 translate-y-full group-hover:-translate-y-1/2 group-hover:top-1/2 myTransition cursorScale"
+            >
+              intro
+            </span>
+          </a>
+        </div>
+        <div
+          class="text-white sm:text-5xl text-4xl font-bold uppercase relative overflow-hidden sm:mb-2 mb-1"
+        >
+          <a
+            href="#about"
+            class="group block w-full sm:h-12 h-10 overflow-hidden cursorScale"
+          >
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 myTransition group-hover:top-0 group-hover:-translate-y-full cursorScale"
+            >
+              about
+            </span>
+            <span
+              class="text-violet-500 absolute left-0 translate-y-full group-hover:-translate-y-1/2 group-hover:top-1/2 myTransition cursorScale"
+            >
+              myself
+            </span>
+          </a>
+        </div>
+        <div
+          class="text-white sm:text-5xl text-4xl font-bold uppercase relative overflow-hidden sm:mb-2 mb-1"
+        >
+          <a
+            href="#services"
+            class="group block w-full sm:h-12 h-10 overflow-hidden cursorScale"
+          >
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 myTransition group-hover:top-0 group-hover:-translate-y-full cursorScale"
+            >
+              services
+            </span>
+            <span
+              class="text-violet-500 absolute left-0 translate-y-full group-hover:-translate-y-1/2 group-hover:top-1/2 myTransition cursorScale"
+            >
+              solutions
+            </span>
+          </a>
+        </div>
+        <div
+          class="text-white sm:text-5xl text-4xl font-bold uppercase relative overflow-hidden sm:mb-2 mb-1"
+        >
+          <a
+            href="#work"
+            class="group block w-full sm:h-12 h-10 overflow-hidden cursorScale"
+          >
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 myTransition group-hover:top-0 group-hover:-translate-y-full cursorScale"
+            >
+              work
+            </span>
+            <span
+              class="text-violet-500 absolute left-0 translate-y-full group-hover:-translate-y-1/2 group-hover:top-1/2 myTransition cursorScale"
+            >
+              portfolio
+            </span>
+          </a>
+        </div>
+        <div
+          class="text-white sm:text-5xl text-4xl font-bold uppercase relative overflow-hidden"
+        >
+          <a
+            href="#contact"
+            class="group block w-full sm:h-12 h-10 overflow-hidden cursorScale"
+          >
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 myTransition group-hover:top-0 group-hover:-translate-y-full cursorScale"
+            >
+              Contact
+            </span>
+            <span
+              class="text-violet-500 absolute left-0 translate-y-full group-hover:-translate-y-1/2 group-hover:top-1/2 myTransition cursorScale"
+            >
+              connect
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section -->
+    <main
+      id="home"
+      class="min-h-screen flex justify-center items-center overflow-x-hidden"
+    >
+      <div class="w-screen">
+        <!-- Main text section -->
+        <div class="flex justify-center relative overflow-hidden">
+          <img
+            src="assets/images/ring.png"
+            alt="..."
+            class="animate-spin stampRing w-36 sm:block hidden absolute bottom-1/3 brightness-200 left-[24%]"
+          />
+          <img
+            src="assets/images/dots.png"
+            alt="..."
+            class="w-64 absolute top-1/4 brightness-200 right-0 translate-x-1/2 opacity-30"
+          />
+          <div class="mt-28 sm:w-2/3 w-full px-4 relative">
+            <div>
+              <h1
+                class="text-white lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-extrabold text-center uppercase"
+              >
+                <span
+                  class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-violet-800 via-red-700 to-blue-700"
+                  >thousand</span
+                ><br />
+                words
+              </h1>
+              <div class="flex justify-center">
+                <p
+                  class="text-zinc-400 text-sm font-normal text-center mt-5 lg:w-3/5 sm:w-4/5 w-11/12"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  accusamus esse quisquam nobis omnis cumque. Similique.
+                </p>
+              </div>
+              <!-- Button -->
+              <div class="mt-10 flex justify-center">
+                <span
+                  class="bg-gradient-to-r from-violet-700 to-red-700 h-[50px] px-[1px] flex justify-center items-center rounded-full overflow-hidden cursorScale"
+                >
+                  <a
+                    href="#about"
+                    class="py-4 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all bg-zinc-950 hover:bg-violet-500"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                    ></span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Animated strips -->
+        <div
+          class="lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-bold text-white uppercase overflow-hidden h-96 -mt-10 flex justify-center items-center"
+        >
+          <div>
+            <div
+              class="flex items-center justify-start whitespace-nowrap rotate-6"
+            >
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-zinc-950 border-y border-zinc-500"
+              >
+                <h3 class="px-4">So</h3>
+                <h3 class="px-4">much</h3>
+                <h3 class="px-4">more</h3>
+                <h3 class="px-4">than</h3>
+                <h3 class="px-4">a</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-zinc-950 border-y border-zinc-500"
+              >
+                <h3 class="px-4">So</h3>
+                <h3 class="px-4">much</h3>
+                <h3 class="px-4">more</h3>
+                <h3 class="px-4">than</h3>
+                <h3 class="px-4">a</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-zinc-950 border-y border-zinc-500"
+              >
+                <h3 class="px-4">So</h3>
+                <h3 class="px-4">much</h3>
+                <h3 class="px-4">more</h3>
+                <h3 class="px-4">than</h3>
+                <h3 class="px-4">a</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-zinc-950 border-y border-zinc-500"
+              >
+                <h3 class="px-4">So</h3>
+                <h3 class="px-4">much</h3>
+                <h3 class="px-4">more</h3>
+                <h3 class="px-4">than</h3>
+                <h3 class="px-4">a</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-start whitespace-nowrap -rotate-6 -translate-y-full text-zinc-950"
+            >
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate2 bg-zinc-200 border-y border-zinc-500"
+              >
+                <h3 class="px-4">The</h3>
+                <h3 class="px-4">easiest</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+                <h3 class="px-4">you</h3>
+                <h3 class="px-4">will</h3>
+                <h3 class="px-4">ever</h3>
+                <h3 class="px-4">use</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate2 bg-zinc-200 border-y border-zinc-500"
+              >
+                <h3 class="px-4">The</h3>
+                <h3 class="px-4">easiest</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+                <h3 class="px-4">you</h3>
+                <h3 class="px-4">will</h3>
+                <h3 class="px-4">ever</h3>
+                <h3 class="px-4">use</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate2 bg-zinc-200 border-y border-zinc-500"
+              >
+                <h3 class="px-4">The</h3>
+                <h3 class="px-4">easiest</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+                <h3 class="px-4">you</h3>
+                <h3 class="px-4">will</h3>
+                <h3 class="px-4">ever</h3>
+                <h3 class="px-4">use</h3>
+              </div>
+              <div
+                class="flex items-center justify-start whitespace-nowrap overlayAnimate2 bg-zinc-200 border-y border-zinc-500"
+              >
+                <h3 class="px-4">The</h3>
+                <h3 class="px-4">easiest</h3>
+                <h3 class="px-4">screen</h3>
+                <h3 class="px-4">recorder</h3>
+                <h3 class="px-4">you</h3>
+                <h3 class="px-4">will</h3>
+                <h3 class="px-4">ever</h3>
+                <h3 class="px-4">use</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- About section -->
+    <section
+      id="about"
+      class="bg-violet-950/30 relative lg:rounded-t-[50px] md:rounded-t-[40px] sm:rounded-t-[30px] rounded-t-3xl lg:mt-10"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full -z-10 opacity-10 lg:rounded-t-[50px] md:rounded-t-[40px] sm:rounded-t-[30px] rounded-t-3xl"
+        style="background-image: url('assets/images/bgdots.png')"
+      ></div>
+      <div class="container mx-auto py-32 px-4">
+        <h3
+          class="text-white text-center uppercase lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-extrabold"
+        >
+          <span class="relative inline-block">
+            <span>about me</span>
+            <span
+              class="inline-block absolute md:top-4 top-0 left-0 bg-white/30 w-1/2 h-full -z-10 -translate-y-1/2 -translate-x-1/4 rounded-ss-xl"
+            ></span>
+            <span
+              class="inline-block absolute md:bottom-4 bottom-0 right-0 bg-white/30 w-1/2 h-full -z-10 translate-y-1/2 translate-x-1/4 rounded-br-xl"
+            ></span>
+            <span
+              class="absolute -bottom-2 left-0 h-[1px] bg-white w-10 rounded-full"
+            >
+              <i
+                class="bi bi-chevron-right text-white absolute top-1/2 -translate-y-1/2 right-[1px] text-sm translate-x-1/2"
+              ></i
+            ></span>
+          </span>
+        </h3>
+        <div class="flex justify-center">
+          <p
+            class="text-zinc-200 md:text-base text-sm font-medium uppercase text-center mt-10 lg:w-2/3 sm:w-3/4 w-full"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo enim,
+            laudantium ratione sit tempore ducimus voluptatem, minus vero dolor
+            quas explicabo fugiat iure magni, distinctio cupiditate voluptatibus
+            et inventore nulla.
+          </p>
+        </div>
+        <!-- socials -->
+        <div class="flex justify-center items-center mt-10">
+          <a
+            href="#"
+            class="text-violet-400 text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+          >
+            <i class="bi bi-twitter cursorScale"></i>
+          </a>
+          <a
+            href="#"
+            class="text-violet-400 text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+          >
+            <i class="bi bi-behance cursorScale"></i>
+          </a>
+          <a
+            href="#"
+            class="text-violet-400 text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+          >
+            <i class="bi bi-whatsapp cursorScale"></i>
+          </a>
+          <a
+            href="#"
+            class="text-violet-400 text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+          >
+            <i class="bi bi-github cursorScale"></i>
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center sm:mt-32 mt-16">
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >1</span
+              >
+              react developer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >2</span
+              >
+              mobile app developer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >3</span
+              >
+              backend developer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >4</span
+              >
+              UI developer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >5</span
+              >
+              frontend web developer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >6</span
+              >
+              UI/UX designer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >7</span
+              >
+              graphic designer
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >8</span
+              >
+              photography & travelling
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >9</span
+              >
+              marketing expert
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >10</span
+              >
+              Editor
+            </div>
+            <div
+              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-xl relative font-semibold capitalize sm:mb-28 mb-8"
+            >
+              <span
+                class="absolute text-white/20 font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-5xl top-0 left-0 -translate-y-1/2 leading-3 -z-20"
+                >11</span
+              >
+              part time teacher
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3 lg:block hidden">
+            <img
+              src="assets/images/me.png"
+              alt="..."
+              class="w-full rounded-2xl sticky saturate-0 contrast-150 top-5 block px-16"
+            />
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              exercitationem nam nobis sapiente, velit id ea illo excepturi,
+              harum odio deserunt dantium mollitia tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              Lorem pisicing elit. Unde exercitationem nam nobis sapiente, velit
+              id ea illo excepturi, harum odio deserunt expedita asperiores.
+              Porro laudantium mollitia tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              Undeexe rcitationem nam nobis sapiente, velit id ea illo
+              excepturi, harum odio deserunt expedita asperiores. Porro
+              laudantium mollitia tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              adipisicing Unde exercitationem nam nobis sapiente, velit id ea
+              illo excepturi, harum odio deserunt expedita asperiores. Porro
+              laudantium mollitia tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              dolor sit amet consectetur adipisicing elit. Unde velit id ea illo
+              excepturi, harum odio deserunt expedita asperiores. Porro
+              laudantium mollitia tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              tationem nam nobis sapiente, velit id ea illo excepturi, harum
+              odio deserunt expedita asperiores. Porro laudantium mollitia
+              tempora ullam, ratione fugit.
+            </div>
+            <div
+              class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-light capitalize sm:mb-20 mb-8"
+            >
+              <span
+                class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-extrabold"
+                >"</span
+              >
+              amet consectetur adipisicing elit. Expedita reiciendis sit
+              temporibus ullam, quia eligendi optio sequi cumque. Eos
+              dignissimos sunt provident delectus minima mollitia, corporis
+              nostrum eius unde veniam!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="relative">
+      <div
+        class="absolute top-0 left-0 w-full h-full -z-10 bg-cover bg-center bg-no-repeat bg-fixed opacity-50"
+        style="background-image: url('assets/images/content.png')"
+      ></div>
+      <!-- services animation line -->
+      <div class="overflow-hidden">
+        <div
+          class="flex items-center justify-start whitespace-nowrap text-transparent font-bold lg:text-9xl md:text-8xl sm:text-7xl text-6xl uppercase"
+        >
+          <div
+            class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-transparent lg:pb-3 pb-2"
+          >
+            <h3 class="otherFont strokTxt">web development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">frontend development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ui development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">seo</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">android development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ios development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">flutter development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+          </div>
+          <div
+            class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-transparent lg:pb-3 pb-2"
+          >
+            <h3 class="otherFont strokTxt">web development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">frontend development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ui development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">seo</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">android development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ios development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">flutter development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+          </div>
+          <div
+            class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-transparent lg:pb-3 pb-2"
+          >
+            <h3 class="otherFont strokTxt">web development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">frontend development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ui development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">seo</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">android development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ios development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">flutter development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+          </div>
+          <div
+            class="flex items-center justify-start whitespace-nowrap overlayAnimate bg-transparent lg:pb-3 pb-2"
+          >
+            <h3 class="otherFont strokTxt">web development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">frontend development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ui development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">seo</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">android development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">ios development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+            <h3 class="otherFont strokTxt">flutter development</h3>
+            <i
+              class="bi bi-asterisk lg:px-6 md:px-5 sm:px-4 px-3 text-violet-400 lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-3"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="container mx-auto py-36 px-4">
+        <div class="flex flex-wrap justify-center">
+          <!-- Services cards -->
+          <div class="md:w-1/2 sm:w-2/3 w-full p-2 md:order-1 order-2">
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:rotate-3 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >1</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  Web development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:-rotate-2 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >2</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  android development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:rotate-6 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >3</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  frontend development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:-rotate-1 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >4</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  ios development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:rotate-6 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >5</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  flutter development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:-rotate-2 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >6</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  react.js development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:rotate-1 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >7</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  backend development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:-rotate-3 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >8</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  mobile app development
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:rotate-2 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >9</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  seo
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-2xl p-[2px] bg-gradient-to-tr from-violet-900 via-red-800 to-transparent md:-rotate-6 md:sticky top-28 md:mb-12 shadow-xl shadow-black mb-4"
+            >
+              <div
+                class="lg:p-9 sm:p-7 p-5 backdrop-blur-sm bg-black/90 rounded-2xl"
+              >
+                <span
+                  class="text-9xl inline-block font-extrabold text-white/10 otherFont"
+                  >10</span
+                >
+                <h3
+                  class="uppercase text-white otherFont font-extrabold lg:text-5xl md:text-4xl text-3xl -mt-12"
+                >
+                  sales marketing
+                </h3>
+                <p class="text-zinc-400 text-sm capitalize font-normal mt-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, quasi repudiandae. Ipsum maiores aperiam
+                  molestias! Delectus vitae ut autem sequi libero, minus a!
+                  Voluptatum odio dolorem maiores cupiditate ratione omnis!
+                </p>
+                <!-- Button -->
+                <div class="mt-8">
+                  <a
+                    href="#about"
+                    class="py-3 px-8 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-white/5"
+                  >
+                    <span
+                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                      >About the artist
+                      <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 sm:w-2/3 w-full p-2 md:order-2 order-1 md:mb-0 mb-10"
+          >
+            <div class="sticky top-28 text-end">
+              <h3
+                class="uppercase lg:text-9xl sm:text-7xl text-5xl font-extrabold text-white otherFont"
+              >
+                utilities, Services
+              </h3>
+              <div class="flex justify-end mt-4">
+                <p
+                  class="text-zinc-400 font-light text-sm capitalize lg:w-1/2 sm:w-2/3 w-full"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, ullam et ad nemo incidunt.
+                </p>
+              </div>
+              <!-- socials -->
+              <div class="flex justify-end items-center md:mt-20 mt-8">
+                <a
+                  href="#"
+                  class="text-transparent bg-clip-text bg-gradient-to-tr from-violet-900 via-red-800 to-transparent text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+                >
+                  <i class="bi bi-twitter cursorScale"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-transparent bg-clip-text bg-gradient-to-tr from-violet-900 via-red-800 to-transparent text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+                >
+                  <i class="bi bi-behance cursorScale"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-transparent bg-clip-text bg-gradient-to-tr from-violet-900 via-red-800 to-transparent text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+                >
+                  <i class="bi bi-whatsapp cursorScale"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-transparent bg-clip-text bg-gradient-to-tr from-violet-900 via-red-800 to-transparent text-2xl leading-3 cursorScale px-3 hover:text-white transition-all"
+                >
+                  <i class="bi bi-github cursorScale"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients -->
+    <section
+      class="relative bg-gradient-to-r from-black via-violet-700/80 to-black"
+    >
+      <div
+        class="absolute h-full w-full left-0 top-0 saturate-0 opacity-30 -z-10 bg-fixed bg-cover bg-center bg-no-repeat backdrop-blur-sm"
+        style="background-image: url('assets/images/Clients.png')"
+      ></div>
+      <div class="py-32 container mx-auto px-4">
+        <div class="flex justify-center items-center text-center">
+          <div class="lg:w-1/2 sm:w-2/3 w-full">
+            <h3
+              class="text-white lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-extrabold uppercase"
+            >
+              clients
+            </h3>
+            <p class="text-zinc-400 text-sm capitalize font-normal">
+              we worked with many reputed people & organizations
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center flex-wrap mt-16">
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/netflix.png" alt="..." class="w-full" />
+          </div>
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/samsung.webp" alt="..." class="w-full" />
+          </div>
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/Amazon.png" alt="..." class="w-full" />
+          </div>
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/riots.png" alt="..." class="w-full" />
+          </div>
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/Microsoft.png" alt="..." class="w-full" />
+          </div>
+          <div class="lg:w-40 md:w-36 sm:w-32 w-28 md:p-4 p-3">
+            <img src="assets/images/google.png" alt="..." class="w-full" />
+          </div>
+        </div>
+        <div class="flex justify-center mt-14">
+          <a
+            href="#contact"
+            class="py-3 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all border border-white/10 backdrop-blur-sm shadow-xl shadow-black/20"
+          >
+            <span class="opacity-0 cursorScale whitespace-nowrap"
+              >let's connect</span
+            >
+            <span
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale whitespace-nowrap"
+              >let's connect</span
+            >
+            <span
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale whitespace-nowrap"
+              >let's connect</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Work section -->
+    <section id="work">
+      <div class="border-y border-white/10">
+        <div class="flex">
+          <div
+            class="lg:w-[90%] sm:w-[85%] w-full pt-32 pb-20 lg:ps-16 md:ps-16 sm:ps-10 ps-5 pe-4"
+          >
+            <img
+              src="assets/images/work.png"
+              alt="..."
+              class="w-full sticky top-12 opacity-5 -z-50"
+            />
+            <div class="flex flex-wrap">
+              <div class="md:w-1/2 w-full p-2">
+                <div class="sticky top-20">
+                  <h3
+                    class="text-sm text-zinc-400/50 font-bold uppercase otherFont"
+                  >
+                    PROJECT GALLERY
+                  </h3>
+                  <h3
+                    class="uppercase lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold text-white"
+                  >
+                    Featured work
+                  </h3>
+                  <p class="text-sm font-medium text-zinc-300 mt-8">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci minima quaerat porro iste est eos animi officiis
+                    nemo, quis corrupti dolore qui at quod placeat sequi
+                    quibusdam expedita repudiandae quos numquam atque illo
+                    perferendis hic impedit consequuntur? Eius minima fugit
+                    quibusdam est perferendis, accusamus voluptas sit! Provident
+                    quibusdam consequuntur maiores.
+                  </p>
+                  <div class="mt-10">
+                    <!-- Button -->
+                    <button
+                      id="viewAllWork"
+                      type="button"
+                      class="py-3 px-8 border border-zinc-600 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all m-1 bg-transparent backdrop-blur-sm"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View All Work<i
+                          class="bi bi-fullscreen ps-3 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View All Work<i
+                          class="bi bi-fullscreen ps-3 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View All Work<i
+                          class="bi bi-fullscreen ps-3 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                    <div>
+                      <!-- Button -->
+                      <a
+                        href="#about"
+                        class="py-3 px-8 border border-zinc-600 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all m-1 bg-transparent backdrop-blur-sm"
+                      >
+                        <span
+                          class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                          >About the artist
+                          <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                        ></span>
+                        <span
+                          class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                          >About the artist
+                          <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                        ></span>
+                        <span
+                          class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                          >About the artist
+                          <i class="bi bi-arrow-up ps-2 cursorScale"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 w-full p-2">
+                <div class="relative group">
+                  <img
+                    src="assets/images/work1.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 1
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#1"
+                      description="Amidst the bustling cityscape, a symphony of car horns and footsteps, life pulsates with relentless energy. Skyscrapers pierce the sky, their reflective glass surfaces mirroring the aspirations of a metropolis in perpetual motion. Street vendors peddle their wares, adding vibrant hues to the urban tapestry. In the heart of the chaos, there's a rhythm, a dance of chaos and order that defines the city's essence.Amidst the bustling cityscape, a symphony of car horns and footsteps, life pulsates with relentless energy. Skyscrapers pierce the sky, their reflective glass surfaces mirroring the aspirations of a metropolis in perpetual motion. Street vendors peddle their wares, adding vibrant hues to the urban tapestry. In the heart of the chaos, there's a rhythm, a dance of chaos and order that defines the city's essence."
+                      preview1="assets/images/w1p1.jpg"
+                      preview2="assets/images/w1p2.jpg"
+                      preview3="assets/images/w1p3.jpg"
+                      preview4="assets/images/w1p4.jpg"
+                      preview5="assets/images/w1p5.jpg"
+                      experiences="Amidst the bustling cityscape, a symphony of car horns and footsteps, life pulsates with relentless energy. Skyscrapers pierce the sky, their reflective glass surfaces mirroring the aspirations of a metropolis in perpetual motion. Street vendors peddle their wares, adding vibrant hues to the urban tapestry. In the heart of the chaos, there's a rhythm, a dance of chaos and order that defines the city's essence."
+                      smallDescription="Amidst the bustling cityscape, a symphony of car horns and footsteps, life pulsates with relentless energy. In the heart of the chaos, there's a rhythm, a dance of chaos and order that defines the city's essence."
+                      mainHeading="Project 1"
+                      bgImage="assets/images/work1.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work2.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 2
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#2"
+                      description="The last rays of sunlight kiss the water's surface, leaving a trail of glistening reflections. Shadows lengthen, and the once vibrant landscape transitions into a realm of subtle contrasts. A quiet stillness settles, inviting contemplation as nature transitions between the realms of light and darkness.The last rays of sunlight kiss the water's surface, leaving a trail of glistening reflections. Shadows lengthen, and the once vibrant landscape transitions into a realm of subtle contrasts. A quiet stillness settles, inviting contemplation as nature transitions between the realms of light and darkness.The last rays of sunlight kiss the water's surface, leaving a trail of glistening reflections. Shadows lengthen, and the once vibrant landscape transitions into a realm of subtle contrasts. A quiet stillness settles, inviting contemplation as nature transitions between the realms of light and darkness."
+                      preview1="assets/images/w2p1.jpg"
+                      preview2="assets/images/w2p2.jpg"
+                      preview3="assets/images/w2p3.jpg"
+                      preview4="assets/images/w2p4.jpg"
+                      preview5="assets/images/w2p5.jpg"
+                      experiences="The last rays of sunlight kiss the water's surface, leaving a trail of glistening reflections. Shadows lengthen, and the once vibrant landscape transitions into a realm of subtle contrasts. A quiet stillness settles, inviting contemplation as nature transitions between the realms of light and darkness."
+                      smallDescription="A quiet stillness settles, inviting contemplation as nature transitions between the realms of light and darkness."
+                      mainHeading="Project 2"
+                      bgImage="assets/images/work2.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work3.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 3
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#3"
+                      description="As the stars emerge, the night unveils its cosmic tapestry. Constellations twinkle overhead, weaving stories across the celestial expanse. The moon rises, a celestial lantern illuminating the nocturnal world. Crickets orchestrate a gentle lullaby, harmonizing with the rustle of leaves, creating a soothing ambiance that envelopes the landscape in a peaceful serenade.As the stars emerge, the night unveils its cosmic tapestry. Constellations twinkle overhead, weaving stories across the celestial expanse. The moon rises, a celestial lantern illuminating the nocturnal world. Crickets orchestrate a gentle lullaby, harmonizing with the rustle of leaves, creating a soothing ambiance that envelopes the landscape in a peaceful serenade.As the stars emerge, the night unveils its cosmic tapestry. Constellations twinkle overhead, weaving stories across the celestial expanse. The moon rises, a celestial lantern illuminating the nocturnal world. Crickets orchestrate a gentle lullaby, harmonizing with the rustle of leaves, creating a soothing ambiance that envelopes the landscape in a peaceful serenade."
+                      preview1="assets/images/w3p1.jpg"
+                      preview2="assets/images/w3p2.jpg"
+                      preview3="assets/images/w3p3.jpg"
+                      preview4="assets/images/w3p4.jpg"
+                      preview5="assets/images/w3p5.jpg"
+                      experiences="As the stars emerge, the night unveils its cosmic tapestry. Constellations twinkle overhead, weaving stories across the celestial expanse. The moon rises, a celestial lantern illuminating the nocturnal world. Crickets orchestrate a gentle lullaby, harmonizing with the rustle of leaves, creating a soothing ambiance that envelopes the landscape in a peaceful serenade."
+                      smallDescription="As the stars emerge, the night unveils its cosmic tapestry. Constellations twinkle overhead, weaving stories across the celestial expanse."
+                      mainHeading="Project 3"
+                      bgImage="assets/images/work3.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work5.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 4
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#4"
+                      description="In this nocturnal haven, the symphony of the natural world deepens. The cool night air carries whispers of unseen creatures, adding an air of mystery to the surroundings. Time seems suspended, and as the world slumbers, the beauty of the night unfolds, a testament to the ever-shifting rhythms of the cosmos and the quiet magic that resides within the embrace of darkness.In this nocturnal haven, the symphony of the natural world deepens. The cool night air carries whispers of unseen creatures, adding an air of mystery to the surroundings. Time seems suspended, and as the world slumbers, the beauty of the night unfolds, a testament to the ever-shifting rhythms of the cosmos and the quiet magic that resides within the embrace of darkness.In this nocturnal haven, the symphony of the natural world deepens. The cool night air carries whispers of unseen creatures, adding an air of mystery to the surroundings. Time seems suspended, and as the world slumbers, the beauty of the night unfolds, a testament to the ever-shifting rhythms of the cosmos and the quiet magic that resides within the embrace of darkness."
+                      preview1="assets/images/w4p1.jpg"
+                      preview2="assets/images/w4p2.jpg"
+                      preview3="assets/images/w4p3.jpg"
+                      preview4="assets/images/w4p4.jpg"
+                      preview5="assets/images/w4p5.jpg"
+                      experiences="In this nocturnal haven, the symphony of the natural world deepens. The cool night air carries whispers of unseen creatures, adding an air of mystery to the surroundings. Time seems suspended, and as the world slumbers, the beauty of the night unfolds, a testament to the ever-shifting rhythms of the cosmos and the quiet magic that resides within the embrace of darkness."
+                      smallDescription="The cool night air carries whispers of unseen creatures, adding an air of mystery to the surroundings."
+                      mainHeading="Project 4"
+                      bgImage="assets/images/work5.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work6.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 5
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#5"
+                      description="The rhythmic sounds of crickets emerge, joining the nocturnal symphony in the embrace of darkness. Stars begin to twinkle, punctuating the vast expanse with celestial brilliance. The air becomes cooler, carrying the fragrance of earth and pine. It's a time when the world transitions, inviting contemplation beneath the celestial theater of the night sky.The rhythmic sounds of crickets emerge, joining the nocturnal symphony in the embrace of darkness. Stars begin to twinkle, punctuating the vast expanse with celestial brilliance. The air becomes cooler, carrying the fragrance of earth and pine. It's a time when the world transitions, inviting contemplation beneath the celestial theater of the night sky.The rhythmic sounds of crickets emerge, joining the nocturnal symphony in the embrace of darkness. Stars begin to twinkle, punctuating the vast expanse with celestial brilliance. The air becomes cooler, carrying the fragrance of earth and pine. It's a time when the world transitions, inviting contemplation beneath the celestial theater of the night sky."
+                      preview1="assets/images/w5p1.jpg"
+                      preview2="assets/images/w5p2.jpg"
+                      preview3="assets/images/w5p3.jpg"
+                      preview4="assets/images/w5p4.jpg"
+                      preview5="assets/images/w5p5.jpg"
+                      experiences="The rhythmic sounds of crickets emerge, joining the nocturnal symphony in the embrace of darkness. Stars begin to twinkle, punctuating the vast expanse with celestial brilliance. The air becomes cooler, carrying the fragrance of earth and pine. It's a time when the world transitions, inviting contemplation beneath the celestial theater of the night sky."
+                      smallDescription="The rhythmic sounds of crickets emerge, joining the nocturnal symphony in the embrace of darkness."
+                      mainHeading="Project 5"
+                      bgImage="assets/images/work6.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work7.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 6
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#6"
+                      description="In this quietude, one can feel the pulse of the universe, a gentle reminder of the perpetual cycle of life. The night, with its enchanting beauty, becomes a sanctuary for dreams, reflections, and the quiet conversations of the soul. Under the celestial canopy, the world transforms into a realm of introspection, where the mysteries of existence intertwine with the tranquility of the night.In this quietude, one can feel the pulse of the universe, a gentle reminder of the perpetual cycle of life. The night, with its enchanting beauty, becomes a sanctuary for dreams, reflections, and the quiet conversations of the soul. Under the celestial canopy, the world transforms into a realm of introspection, where the mysteries of existence intertwine with the tranquility of the night.In this quietude, one can feel the pulse of the universe, a gentle reminder of the perpetual cycle of life. The night, with its enchanting beauty, becomes a sanctuary for dreams, reflections, and the quiet conversations of the soul. Under the celestial canopy, the world transforms into a realm of introspection, where the mysteries of existence intertwine with the tranquility of the night."
+                      preview1="assets/images/w6p1.jpg"
+                      preview2="assets/images/w6p2.jpg"
+                      preview3="assets/images/w6p3.jpg"
+                      preview4="assets/images/w6p4.jpg"
+                      preview5="assets/images/w6p5.jpg"
+                      experiences="In this quietude, one can feel the pulse of the universe, a gentle reminder of the perpetual cycle of life. The night, with its enchanting beauty, becomes a sanctuary for dreams, reflections, and the quiet conversations of the soul. Under the celestial canopy, the world transforms into a realm of introspection, where the mysteries of existence intertwine with the tranquility of the night."
+                      smallDescription="In this quietude, one can feel the pulse of the universe, a gentle reminder of the perpetual cycle of life."
+                      mainHeading="Project 6"
+                      bgImage="assets/images/work7.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work8.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 7
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#7"
+                      description="Nestled between rolling hills, a quaint village awakens to the gentle caress of dawn. Roosters herald the sunrise as villagers engage in timeless rituals. Cobblestone pathways wind through lush greenery, leading to rustic cottages adorned with blooming flowers. The air is crisp, infused with the scent of nature. Here, time seems to linger, embracing the simplicity that weaves the fabric of rural existence.Nestled between rolling hills, a quaint village awakens to the gentle caress of dawn. Roosters herald the sunrise as villagers engage in timeless rituals. Cobblestone pathways wind through lush greenery, leading to rustic cottages adorned with blooming flowers. The air is crisp, infused with the scent of nature. Here, time seems to linger, embracing the simplicity that weaves the fabric of rural existence.Nestled between rolling hills, a quaint village awakens to the gentle caress of dawn. Roosters herald the sunrise as villagers engage in timeless rituals. Cobblestone pathways wind through lush greenery, leading to rustic cottages adorned with blooming flowers. The air is crisp, infused with the scent of nature. Here, time seems to linger, embracing the simplicity that weaves the fabric of rural existence."
+                      preview1="assets/images/w7p1.jpg"
+                      preview2="assets/images/w7p2.jpg"
+                      preview3="assets/images/w7p3.jpg"
+                      preview4="assets/images/w7p4.jpg"
+                      preview5="assets/images/w7p5.jpg"
+                      experiences="Nestled between rolling hills, a quaint village awakens to the gentle caress of dawn. Roosters herald the sunrise as villagers engage in timeless rituals. Cobblestone pathways wind through lush greenery, leading to rustic cottages adorned with blooming flowers. The air is crisp, infused with the scent of nature. Here, time seems to linger, embracing the simplicity that weaves the fabric of rural existence."
+                      smallDescription="Nestled between rolling hills, a quaint village awakens to the gentle caress of dawn."
+                      mainHeading="Project 7"
+                      bgImage="assets/images/work8.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work9.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 8
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#8"
+                      description="Beneath a canopy of stars, the desert whispers secrets of ancient tales. Sand dunes stretch like undulating waves, capturing the moonlight's silver glow. The nocturnal symphony unfolds as desert creatures emerge, navigating the vast expanse in a nocturnal ballet. The silence is profound, broken only by the soft footprints of nomads, etching their stories in the shifting sands beneath the celestial theater.Beneath a canopy of stars, the desert whispers secrets of ancient tales. Sand dunes stretch like undulating waves, capturing the moonlight's silver glow. The nocturnal symphony unfolds as desert creatures emerge, navigating the vast expanse in a nocturnal ballet. The silence is profound, broken only by the soft footprints of nomads, etching their stories in the shifting sands beneath the celestial theater.Beneath a canopy of stars, the desert whispers secrets of ancient tales. Sand dunes stretch like undulating waves, capturing the moonlight's silver glow. The nocturnal symphony unfolds as desert creatures emerge, navigating the vast expanse in a nocturnal ballet. The silence is profound, broken only by the soft footprints of nomads, etching their stories in the shifting sands beneath the celestial theater."
+                      preview1="assets/images/w8p1.jpg"
+                      preview2="assets/images/w8p2.jpg"
+                      preview3="assets/images/w8p3.jpg"
+                      preview4="assets/images/w8p4.jpg"
+                      preview5="assets/images/w8p5.jpg"
+                      experiences="Beneath a canopy of stars, the desert whispers secrets of ancient tales. Sand dunes stretch like undulating waves, capturing the moonlight's silver glow. The nocturnal symphony unfolds as desert creatures emerge, navigating the vast expanse in a nocturnal ballet. The silence is profound, broken only by the soft footprints of nomads, etching their stories in the shifting sands beneath the celestial theater."
+                      smallDescription="Beneath a canopy of stars, the desert whispers secrets of ancient tales. Sand dunes stretch like undulating waves, capturing the moonlight's silver glow."
+                      mainHeading="Project 8"
+                      bgImage="assets/images/work9.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work10.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 9
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#9"
+                      description="In the heart of a coastal town, waves play a perpetual melody against the shore. Seagulls dance on the sea breeze, their calls harmonizing with the rhythmic lull of the tide. Fishing boats return, bearing the day's catch, while fishermen mend nets by weathered docks. Salty air carries the tales of maritime adventures, and the town's pulse beats in sync with the eternal ebb and flow of the ocean.In the heart of a coastal town, waves play a perpetual melody against the shore. Seagulls dance on the sea breeze, their calls harmonizing with the rhythmic lull of the tide. Fishing boats return, bearing the day's catch, while fishermen mend nets by weathered docks. Salty air carries the tales of maritime adventures, and the town's pulse beats in sync with the eternal ebb and flow of the ocean.In the heart of a coastal town, waves play a perpetual melody against the shore. Seagulls dance on the sea breeze, their calls harmonizing with the rhythmic lull of the tide. Fishing boats return, bearing the day's catch, while fishermen mend nets by weathered docks. Salty air carries the tales of maritime adventures, and the town's pulse beats in sync with the eternal ebb and flow of the ocean."
+                      preview1="assets/images/w9p1.jpg"
+                      preview2="assets/images/w9p2.jpg"
+                      preview3="assets/images/w9p3.jpg"
+                      preview4="assets/images/w9p4.jpg"
+                      preview5="assets/images/w9p5.jpg"
+                      experiences="In the heart of a coastal town, waves play a perpetual melody against the shore. Seagulls dance on the sea breeze, their calls harmonizing with the rhythmic lull of the tide. Fishing boats return, bearing the day's catch, while fishermen mend nets by weathered docks. Salty air carries the tales of maritime adventures, and the town's pulse beats in sync with the eternal ebb and flow of the ocean."
+                      smallDescription="In the heart of a coastal town, waves play a perpetual melody against the shore."
+                      mainHeading="Project 9"
+                      bgImage="assets/images/work10.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work11.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 10
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#10"
+                      description="In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky.In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky.In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky.In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky."
+                      preview1="assets/images/w10p1.jpg"
+                      preview2="assets/images/w10p2.jpg"
+                      preview3="assets/images/w10p3.jpg"
+                      preview4="assets/images/w10p4.jpg"
+                      preview5="assets/images/w10p5.jpg"
+                      experiences="In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky.In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening. The gentle rustling of leaves and distant calls of night creatures add to the symphony of the evening. Nature's theater unfolds, inviting contemplation as the world shifts from the vibrancy of day to the subtle allure of the night sky."
+                      smallDescription="In this magical transition, shadows lengthen, and the air carries whispers of nocturnal life awakening."
+                      mainHeading="Project 10"
+                      bgImage="assets/images/work11.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work12.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 11
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#11"
+                      description="Stars emerge, sparkling like diamonds against the velvety darkness. The moon, a silent guardian, bathes the landscape in a soft, silver glow. Reflecting on the water's surface, it creates a celestial pathway, connecting the earthly realm to the cosmic expanse above. Each ripple on the lake seems to carry the mysteries of the universe, inviting reflection and a sense of wonder beneath the celestial spectacle.Stars emerge, sparkling like diamonds against the velvety darkness. The moon, a silent guardian, bathes the landscape in a soft, silver glow. Reflecting on the water's surface, it creates a celestial pathway, connecting the earthly realm to the cosmic expanse above. Each ripple on the lake seems to carry the mysteries of the universe, inviting reflection and a sense of wonder beneath the celestial spectacle.Stars emerge, sparkling like diamonds against the velvety darkness. The moon, a silent guardian, bathes the landscape in a soft, silver glow. Reflecting on the water's surface, it creates a celestial pathway, connecting the earthly realm to the cosmic expanse above. Each ripple on the lake seems to carry the mysteries of the universe, inviting reflection and a sense of wonder beneath the celestial spectacle."
+                      preview1="assets/images/w11p1.jpg"
+                      preview2="assets/images/w11p2.jpg"
+                      preview3="assets/images/w11p3.jpg"
+                      preview4="assets/images/w11p4.jpg"
+                      preview5="assets/images/w11p5.jpg"
+                      experiences="Stars emerge, sparkling like diamonds against the velvety darkness. The moon, a silent guardian, bathes the landscape in a soft, silver glow. Reflecting on the water's surface, it creates a celestial pathway, connecting the earthly realm to the cosmic expanse above. Each ripple on the lake seems to carry the mysteries of the universe, inviting reflection and a sense of wonder beneath the celestial spectacle."
+                      smallDescription="Stars emerge, sparkling like diamonds against the velvety darkness."
+                      mainHeading="Project 11"
+                      bgImage="assets/images/work12.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work13.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 12
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#12"
+                      description="As the night deepens, a tranquil stillness envelops the scene. The nocturnal symphony crescendos, echoing the harmony of the cosmos. A sense of peace settles over the landscape, reminding observers of the inherent beauty in transitions. In this quietude, the night becomes a canvas for dreams, and the universe unfolds its secrets to those willing to listen to the cosmic whispers in the tranquil embrace of nature.As the night deepens, a tranquil stillness envelops the scene. The nocturnal symphony crescendos, echoing the harmony of the cosmos. A sense of peace settles over the landscape, reminding observers of the inherent beauty in transitions. In this quietude, the night becomes a canvas for dreams, and the universe unfolds its secrets to those willing to listen to the cosmic whispers in the tranquil embrace of nature.As the night deepens, a tranquil stillness envelops the scene. The nocturnal symphony crescendos, echoing the harmony of the cosmos. A sense of peace settles over the landscape, reminding observers of the inherent beauty in transitions. In this quietude, the night becomes a canvas for dreams, and the universe unfolds its secrets to those willing to listen to the cosmic whispers in the tranquil embrace of nature."
+                      preview1="assets/images/w12p1.jpg"
+                      preview2="assets/images/w12p2.jpg"
+                      preview3="assets/images/w12p3.jpg"
+                      preview4="assets/images/w12p4.jpg"
+                      preview5="assets/images/w12p5.jpg"
+                      experiences="As the night deepens, a tranquil stillness envelops the scene. The nocturnal symphony crescendos, echoing the harmony of the cosmos. A sense of peace settles over the landscape, reminding observers of the inherent beauty in transitions. In this quietude, the night becomes a canvas for dreams, and the universe unfolds its secrets to those willing to listen to the cosmic whispers in the tranquil embrace of nature."
+                      smallDescription="As the night deepens, a tranquil stillness envelops the scene. The nocturnal symphony crescendos, echoing the harmony of the cosmos."
+                      mainHeading="Project 12"
+                      bgImage="assets/images/work13.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work14.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10 mb-3"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 13
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#13"
+                      description="Amidst the nocturnal serenity, the magic of the night unfolds. Whispers of ancient tales seem to permeate the air, carried by the gentle breeze. Each ripple on the lake's surface tells a story, capturing the essence of the ever-shifting, interconnected rhythms of the natural world. Under the celestial dome, the night becomes a timeless spectacle, inviting one to lose themselves in the enchanting dance between darkness and starlight.Amidst the nocturnal serenity, the magic of the night unfolds. Whispers of ancient tales seem to permeate the air, carried by the gentle breeze. Each ripple on the lake's surface tells a story, capturing the essence of the ever-shifting, interconnected rhythms of the natural world. Under the celestial dome, the night becomes a timeless spectacle, inviting one to lose themselves in the enchanting dance between darkness and starlight.Amidst the nocturnal serenity, the magic of the night unfolds. Whispers of ancient tales seem to permeate the air, carried by the gentle breeze. Each ripple on the lake's surface tells a story, capturing the essence of the ever-shifting, interconnected rhythms of the natural world. Under the celestial dome, the night becomes a timeless spectacle, inviting one to lose themselves in the enchanting dance between darkness and starlight."
+                      preview1="assets/images/w13p1.jpg"
+                      preview2="assets/images/w13p2.jpg"
+                      preview3="assets/images/w13p3.jpg"
+                      preview4="assets/images/w13p4.jpg"
+                      preview5="assets/images/w13p5.jpg"
+                      experiences="Amidst the nocturnal serenity, the magic of the night unfolds. Whispers of ancient tales seem to permeate the air, carried by the gentle breeze. Each ripple on the lake's surface tells a story, capturing the essence of the ever-shifting, interconnected rhythms of the natural world. Under the celestial dome, the night becomes a timeless spectacle, inviting one to lose themselves in the enchanting dance between darkness and starlight."
+                      smallDescription="Amidst the nocturnal serenity, the magic of the night unfolds. Whispers of ancient tales seem to permeate the air, carried by the gentle breeze."
+                      mainHeading="Project 13"
+                      bgImage="assets/images/work14.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="assets/images/work15.jpg"
+                    alt="..."
+                    class="w-full rounded-md border border-white/10"
+                  />
+                  <div
+                    class="flex justify-between items-center absolute bottom-0 left-0 w-full py-3 lg:px-6 px-4"
+                  >
+                    <h3
+                      class="text-white uppercase font-extrabold lg:text-2xl md:text-xl sm:text-lg text-sm leading-3 lg:group-hover:hidden"
+                    >
+                      project 14
+                    </h3>
+                    <!-- Button -->
+                    <button
+                      type="button"
+                      livePreviewLink="#14"
+                      description="As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night."
+                      preview1="assets/images/w14p1.jpg"
+                      preview2="assets/images/w14p2.jpg"
+                      preview3="assets/images/w14p3.jpg"
+                      preview4="assets/images/w14p4.jpg"
+                      preview5="assets/images/w14p5.jpg"
+                      experiences="As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night.As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk. Silhouetted trees stand as guardians, witnessing the day's graceful descent into the tapestry of night."
+                      smallDescription="As the sun dips below the horizon, the lake mirrors the celestial spectacle, embracing the ephemeral beauty of dusk."
+                      mainHeading="Project 14"
+                      bgImage="assets/images/work15.jpg"
+                      class="py-3 viewWork px-5 rounded-md text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md lg:hidden lg:group-hover:inline-block"
+                    >
+                      <span
+                        class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                      <span
+                        class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                        >View<i
+                          class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-[10%] sm:w-[15%] sm:block hidden p-2">
+            <div class="sticky top-20 h-screen w-full">
+              <h3
+                class="text-white/10 whitespace-nowrap lg:text-7xl md:text-6xl sm:text-5xl font-bold otherFont uppercase rotate-90 mt-14"
+              >
+                Harsh Kushwaha
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <div>
+      <!-- Contact image section -->
+      <div id="contact" class="px-5 sticky top-0 -z-50 flex justify-end py-3">
+        <img
+          src="assets/images/Contactbg.png"
+          alt="..."
+          class="lg:w-1/2 sm:w-2/3 w-full opacity-5 brightness-200"
+        />
+      </div>
+      <!-- Contact Section -->
+      <section class="relative bg-red-600/50">
+        <div
+          class="absolute top-0 lg:left-24 md:left-20 sm:left-16 left-6 -translate-y-1/2"
+        >
+          <img
+            src="assets/images/contactRing.png"
+            alt="..."
+            class="w-32 animate-spin stampRing"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-0 w-full h-full -z-20 bg-cover bg-center bg-no-repeat bg-fixed"
+          style="background-image: url('assets/images/bg.jpg')"
+        ></div>
+        <div
+          class="absolute top-0 left-0 w-full h-full -z-10 opacity-10 bg-fixed"
+          style="background-image: url('assets/images/bgdots.png')"
+        ></div>
+        <div class="flex flex-wrap">
+          <div
+            class="lg:w-1/2 w-full py-32 lg:ps-24 md:ps-20 sm:ps-16 px-6 flex justify-center"
+          >
+            <div class="lg:w-full sm:w-2/3 w-full">
+              <h3
+                class="text-white uppercase font-extrabold lg:text-7xl md:text-6xl sm:text-5xl text-4xl"
+              >
+                So about your new website...
+              </h3>
+              <p class="text-sm font-normal text-zinc-200 mt-5">
+                I hope that's not too presumptive of me. But initial
+                consultations are free, so you really don't have much to lose.
+                And everything to gain.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 w-full backdrop-blur-sm bg-black/5 flex justify-center"
+          >
+            <div
+              class="lg:px-10 md:px-8 sm:px-7 px-6 py-32 lg:w-full sm:w-2/3 w-full"
+            >
+              <h3
+                class="text-white font-semibold otherFont md:text-3xl sm:text-2xl text-lg mb-8 uppercase lg:w-1/2 sm:w-2/3 w-full"
+              >
+                let's work together on your project...
+              </h3>
+              <form>
+                <div class="flex flex-wrap items-center">
+                  <div class="sm:w-1/2 w-full sm:pe-3">
+                    <input
+                      required
+                      type="text"
+                      placeholder="First Name"
+                      class="block w-full outline-none border-b border-white/50 bg-transparent py-4 focus:px-4 focus:backdrop-blur-xl rounded-t-lg text-sm text-white placeholder:text-white focus:border-white focus:placeholder:opacity-0 mb-8"
+                    />
+                  </div>
+                  <div class="sm:w-1/2 w-full">
+                    <input
+                      required
+                      type="text"
+                      placeholder="Last Name"
+                      class="block w-full outline-none border-b border-white/50 bg-transparent py-4 focus:px-4 focus:backdrop-blur-xl rounded-t-lg text-sm text-white placeholder:text-white focus:border-white focus:placeholder:opacity-0 mb-8"
+                    />
+                  </div>
+                  <input
+                    required
+                    type="email"
+                    placeholder="Email Address"
+                    class="block w-full outline-none border-b border-white/50 bg-transparent py-4 focus:px-4 focus:backdrop-blur-xl rounded-t-lg text-sm text-white placeholder:text-white focus:border-white focus:placeholder:opacity-0 mb-8"
+                  />
+                  <input
+                    required
+                    type="number"
+                    placeholder="Contact Number"
+                    class="block w-full outline-none border-b border-white/50 bg-transparent py-4 focus:px-4 focus:backdrop-blur-xl rounded-t-lg text-sm text-white placeholder:text-white focus:border-white focus:placeholder:opacity-0 mb-8"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    class="block w-full outline-none border-b border-white/50 bg-transparent py-4 focus:px-4 focus:backdrop-blur-xl rounded-t-lg text-sm text-white placeholder:text-white focus:border-white focus:placeholder:opacity-0 resize-none h-28"
+                  ></textarea>
+                </div>
+                <div class="flex justify-center mt-8">
+                  <button
+                    type="submit"
+                    class="py-2 px-10 border border-white/50 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all m-1 bg-transparent"
+                  >
+                    <span class="opacity-0 cursorScale flex items-center"
+                      >Submit<i
+                        class="bi bi-arrow-up-right-circle-fill cursorScale ps-2 text-xl"
+                      ></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center"
+                      >Submit<i
+                        class="bi bi-arrow-up-right-circle-fill cursorScale ps-2 text-xl"
+                      ></i
+                    ></span>
+                    <span
+                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center"
+                      >Submit<i
+                        class="bi bi-arrow-up-right-circle-fill cursorScale ps-2 text-xl"
+                      ></i
+                    ></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="relative">
+      <div class="container mx-auto py-32 px-4">
+        <div class="flex flex-wrap sm:justify-between justify-center">
+          <a
+            href="#home"
+            class="text-white lg:text-6xl sm:text-5xl text-4xl font-extrabold select-none cursorScale"
+          >
+            HK
+          </a>
+          <div>
+            <div
+              class="flex flex-wrap justify-center items-center sm:mt-0 mt-6 sm:ps-10 ps-0"
+            >
+              <a
+                href="#"
+                class="text-zinc-400 hover:text-white transition-all text-xs font-medium p-2 uppercase cursorScale"
+                >Linkedin</a
+              >
+              <a
+                href="#"
+                class="text-zinc-400 hover:text-white transition-all text-xs font-medium p-2 uppercase cursorScale"
+                >whatsapp</a
+              >
+              <a
+                href="#"
+                class="text-zinc-400 hover:text-white transition-all text-xs font-medium p-2 uppercase cursorScale"
+                >Twitter</a
+              >
+              <a
+                href="#"
+                class="text-zinc-400 hover:text-white transition-all text-xs font-medium p-2 uppercase cursorScale"
+                >gtihub</a
+              >
+            </div>
+            <div class="flex justify-end mt-8">
+              <a
+                href="#home"
+                class="text-red-600 p-3 cursorScale transition-all text-xs font-bold px-2 uppercase cursorScale flex items-center"
+              >
+                go to top
+                <i
+                  class="bi bi-arrow-up cursorScale text-xl leading-3 ps-2"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center mt-32 text-center text-zinc-300 text-xs font-normal"
+        >
+          Copyright © 2024 Harsh Kushwaha. <br />
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

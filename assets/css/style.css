@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+  cursor: none !important;
+}
+
+.otherFont {
+  font-family: "Oswald", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 3px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6;
+}
+
+.myTransition {
+  transition: 0.4s linear;
+}
+
+#cursorBall {
+  transition: 0.1s linear;
+}
+
+#ring {
+  transition: 0.25s linear;
+}
+
+#smallBall {
+  transition: 0.4s linear;
+}
+
+#navBar {
+  transition: 0.7s;
+}
+
+.transitionBtn {
+  transition: 0.4s;
+}
+
+.overlayAnimate {
+  animation: overlayAnimate 18s linear infinite;
+}
+
+.clientAnimate {
+  animation: overlayAnimate 10s linear infinite;
+}
+
+@keyframes overlayAnimate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overlayAnimate2 {
+  animation: overlayAnimate2 18s linear infinite;
+}
+
+@keyframes overlayAnimate2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.stampRing {
+  animation-duration: 10s;
+}
+
+.strokTxt {
+  -webkit-text-stroke: 2px #504761;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
