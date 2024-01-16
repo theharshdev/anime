@@ -712,6 +712,18 @@ video {
   z-index: 999;
 }
 
+.z-\[50\] {
+  z-index: 50;
+}
+
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[999999\] {
+  z-index: 999999;
+}
+
 .order-1 {
   order: 1;
 }
@@ -1007,6 +1019,11 @@ video {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1450,6 +1467,11 @@ video {
 
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pe-2 {
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem;
 }
 
 .text-center {

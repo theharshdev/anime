@@ -70,14 +70,24 @@ document.addEventListener("mouseleave", () => {
 
 closeAllWorkPopup.addEventListener("click", () => {
   allWorkPopup.classList.add("hidden");
-  body.classList.remove("h-screen");
-  body.classList.remove("overflow-hidden");
+  if (
+    allWorkPopup.classList.contains("hidden") &&
+    workPopup.classList.contains("hidden")
+  ) {
+    body.classList.remove("h-screen");
+    body.classList.remove("overflow-hidden");
+  }
 });
 
 closeWorkPopup.addEventListener("click", () => {
   workPopup.classList.add("hidden");
-  body.classList.remove("h-screen");
-  body.classList.remove("overflow-hidden");
+  if (
+    allWorkPopup.classList.contains("hidden") &&
+    workPopup.classList.contains("hidden")
+  ) {
+    body.classList.remove("h-screen");
+    body.classList.remove("overflow-hidden");
+  }
 });
 
 viewAllWork.addEventListener("click", () => {
