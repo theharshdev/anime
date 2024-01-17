@@ -27,9 +27,11 @@
   <body class="bg-zinc-950">
     <!-- All works & project popup -->
     <div
-        id="allWorkPopup" class="h-screen w-full fixed top-0 left-0 z-[999] overflow-auto hidden backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4">
+      id="allWorkPopup"
+      class="h-screen allWorkMainBox w-full fixed top-0 left-0 z-[999] overflow-auto hidden backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4"
+    >
       <div
-        class="relative bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16"
+        class="relative allWorkBox bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16"
       >
         <button
           id="closeAllWorkPopup"
@@ -47,8 +49,8 @@
                 Work gallery
               </h3>
               <p class="text-sm font-normal text-zinc-300 mt-2">
-                Lorem ipsum dolor sit amet conse adipisi ullam error numquam totam
-                autem obcaecati sunt recusae animi nostrum.
+                Lorem ipsum dolor sit amet conse adipisi ullam error numquam
+                totam autem obcaecati sunt recusae animi nostrum.
               </p>
             </div>
           </div>
@@ -619,9 +621,11 @@
     </div>
     <!-- Work popup box -->
     <div
-        id="workPopup" class="w-full hidden h-screen fixed top-0 left-0 z-[9999] overflow-auto backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4">
+      id="workPopup"
+      class="w-full workMainBox hidden h-screen fixed top-0 left-0 z-[9999] overflow-auto backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4"
+    >
       <div
-        class="relative bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16 overflow-hidden"
+        class="relative workBox bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16 overflow-hidden"
       >
         <button
           id="closeWorkPopup"
@@ -634,7 +638,9 @@
           id="workPopupBg"
           class="absolute top-0 left-0 w-full min-h-[85vh] lg:p-10 md:p-9 sm:p-8 p-5 z-10"
         ></div>
-        <div class="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 w-full min-h-[85vh] z-10"></div>
+        <div
+          class="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 w-full min-h-[85vh] z-10"
+        ></div>
         <div class="container mx-auto py-20 px-4">
           <div class="flex items-center">
             <div class="lg:w-2/3 sm:w-3/4 w-full relative z-10">
@@ -676,7 +682,10 @@
               >
                 Description
               </h3>
-              <p id="description" class="text-zinc-300 sm:text-base text-sm font-light"></p>
+              <p
+                id="description"
+                class="text-zinc-300 sm:text-base text-sm font-light"
+              ></p>
               <div class="flex justify-end mt-24">
                 <!-- button -->
                 <a
@@ -933,10 +942,13 @@
       id="home"
       class="min-h-screen flex justify-center items-center overflow-x-hidden relative lg:pb-52 md:pb-40 sm:pb-32 pb-24"
     >
-      <div class="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full -z-[9999]"
-      style="background-image: url('assets/images/mainbg.png');"></div>
-      <div class="absolute top-0 left-0 w-full h-full -z-[999] backdrop-blur-3xl bg-black/20">
-      </div>
+      <div
+        class="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full -z-[9999]"
+        style="background-image: url('assets/images/mainbg.png')"
+      ></div>
+      <div
+        class="absolute top-0 left-0 w-full h-full -z-[999] backdrop-blur-3xl bg-black/20"
+      ></div>
       <div class="w-screen">
         <!-- Main text section -->
         <div class="flex justify-center relative overflow-hidden">
@@ -971,26 +983,26 @@
               </div>
               <!-- Button -->
               <div class="mt-10 flex justify-center">
-                 <a
-                    href="#about"
-                    class="py-4 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all backdrop-blur-sm border border-white/20"
-                  >
-                    <span
-                      class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                      >About the artist
-                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
-                    ></span>
-                    <span
-                      class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                      >About the artist
-                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
-                    ></span>
-                    <span
-                      class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                      >About the artist
-                      <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
-                    ></span>
-                  </a>
+                <a
+                  href="#about"
+                  class="py-4 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all backdrop-blur-sm border border-white/20"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >About the artist
+                    <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >About the artist
+                    <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >About the artist
+                    <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
+                  ></span>
+                </a>
               </div>
             </div>
           </div>

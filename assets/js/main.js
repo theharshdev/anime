@@ -156,3 +156,34 @@ viewAllWorkBtns.forEach((viewAllWorkBtn, index) => {
     livePreviewLink.setAttribute("href", livePreviewLinkTxt);
   });
 });
+
+window.addEventListener("click", (event) => {
+  const target = event.target;
+  if (
+    target.classList.contains("allWorkMainBox") &&
+    !target.classList.contains("allWorkBox")
+  ) {
+    allWorkPopup.classList.add("hidden");
+    if (
+      allWorkPopup.classList.contains("hidden") &&
+      workPopup.classList.contains("hidden")
+    ) {
+      body.classList.remove("h-screen");
+      body.classList.remove("overflow-hidden");
+    }
+  }
+
+  if (
+    target.classList.contains("workMainBox") &&
+    !target.classList.contains("workBox")
+  ) {
+    workPopup.classList.add("hidden");
+    if (
+      workPopup.classList.contains("hidden") &&
+      workPopup.classList.contains("hidden")
+    ) {
+      body.classList.remove("h-screen");
+      body.classList.remove("overflow-hidden");
+    }
+  }
+});
