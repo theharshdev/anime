@@ -101,7 +101,7 @@ viewWorks.forEach((viewWork) => {
     workPopup.classList.remove("hidden");
     body.classList.add("h-screen");
     body.classList.add("overflow-hidden");
-    workPopupBg.innerHTML = `<div class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-no-repeat -z-20" style="background-image: url('${viewWork.getAttribute(
+    workPopupBg.innerHTML = `<div class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-no-repeat -z-10" style="background-image: url('${viewWork.getAttribute(
       "bgImage"
     )}')"></div>`;
     mainHeading.innerText = viewWork.getAttribute("mainHeading");

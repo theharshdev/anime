@@ -27,589 +27,591 @@
   <body class="bg-zinc-950">
     <!-- All works & project popup -->
     <div
-      id="allWorkPopup"
-      class="w-full h-screen fixed top-0 left-0 z-[999] overflow-auto bg-black/50 backdrop-blur-md hidden"
-    >
-      <button
-        id="closeAllWorkPopup"
-        type="button"
-        class="text-zinc-400 hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale"
+        id="allWorkPopup" class="h-screen w-full fixed top-0 left-0 z-[999] overflow-auto hidden backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4">
+      <div
+        class="relative bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16"
       >
-        <i class="bi bi-x-lg cursorScale"></i>
-      </button>
-      <div class="container mx-auto py-14 px-4">
-        <div class="flex justify-center mb-10">
-          <div class="lg:w-1/2 sm:w-2/3 w-full text-center">
-            <h3
-              class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-2xl font-extrabold uppercase inline-block"
-            >
-              Work gallery
-            </h3>
-            <p class="text-sm font-normal text-zinc-300 mt-2">
-              Lorem ipsum dolor sit amet conse adipisi ullam error numquam totam
-              autem obcaecati sunt recusae animi nostrum.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap md:justify-start justify-center">
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
+        <button
+          id="closeAllWorkPopup"
+          type="button"
+          class="text-zinc-400 hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale"
+        >
+          <i class="bi bi-x-lg cursorScale"></i>
+        </button>
+        <div class="container mx-auto">
+          <div class="flex justify-center mb-10">
+            <div class="lg:w-1/2 sm:w-2/3 w-full text-center">
               <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                class="text-white lg:text-6xl md:text-5xl sm:text-4xl text-2xl font-extrabold uppercase inline-block"
               >
-                Lorem ipsum dolor
+                Work gallery
               </h3>
-              <img
-                src="assets/images/work1.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+              <p class="text-sm font-normal text-zinc-300 mt-2">
+                Lorem ipsum dolor sit amet conse adipisi ullam error numquam totam
+                autem obcaecati sunt recusae animi nostrum.
+              </p>
             </div>
           </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+          <div class="flex flex-wrap md:justify-start justify-center">
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work2.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 1
+                </h3>
+                <img
+                  src="assets/images/work1.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work3.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 2
+                </h3>
+                <img
+                  src="assets/images/work2.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work5.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 3
+                </h3>
+                <img
+                  src="assets/images/work3.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work6.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 4
+                </h3>
+                <img
+                  src="assets/images/work5.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work7.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 5
+                </h3>
+                <img
+                  src="assets/images/work6.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work8.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 6
+                </h3>
+                <img
+                  src="assets/images/work7.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work9.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 7
+                </h3>
+                <img
+                  src="assets/images/work8.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work10.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 8
+                </h3>
+                <img
+                  src="assets/images/work9.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work11.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 9
+                </h3>
+                <img
+                  src="assets/images/work10.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work12.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 10
+                </h3>
+                <img
+                  src="assets/images/work11.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work13.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 11
+                </h3>
+                <img
+                  src="assets/images/work12.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work14.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
-              >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 12
+                </h3>
+                <img
+                  src="assets/images/work13.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
-            <div
-              class="relative overflow-hidden border border-white/10 rounded-lg"
-            >
-              <h3
-                class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                Lorem ipsum dolor
-              </h3>
-              <img
-                src="assets/images/work15.jpg"
-                alt="..."
-                class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
-              />
-              <!-- Button -->
-              <button
-                type="button"
-                class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-sm font-medium cursorScale uppercase group overflow-hidden inline-block h-11 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 13
+                </h3>
+                <img
+                  src="assets/images/work14.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-2">
+              <div
+                class="relative overflow-hidden border border-white/10 rounded-lg"
               >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >View<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </button>
+                <h3
+                  class="absolute top-2 left-3 text-white font-light text-xl capitalize z-10"
+                >
+                  Project 14
+                </h3>
+                <img
+                  src="assets/images/work15.jpg"
+                  alt="..."
+                  class="w-full hover:saturate-0 hover:brightness-50 brightness-75 transition-all"
+                />
+                <!-- Button -->
+                <button
+                  type="button"
+                  class="py-3 viewAllWorkBtn px-5 rounded-md text-white text-xs font-medium cursorScale uppercase group overflow-hidden inline-block h-9 transition-all bg-transparent backdrop-blur-md absolute bottom-2 right-2 viewWorkFromAll"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >View<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -617,93 +619,91 @@
     </div>
     <!-- Work popup box -->
     <div
-      id="workPopup"
-      class="w-full hidden h-screen fixed top-0 left-0 z-[9999] overflow-auto bg-black backdrop-blur-md"
-    >
-      <button
-        id="closeWorkPopup"
-        type="button"
-        class="text-white hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale p-2 z-20"
-      >
-        <i class="bi bi-x-lg cursorScale"></i>
-      </button>
+        id="workPopup" class="w-full hidden h-screen fixed top-0 left-0 z-[9999] overflow-auto backdrop-blur-sm lg:p-20 md:16 sm:p-14 p-4">
       <div
-        id="workPopupBg"
-        class="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 w-full min-h-[85vh] lg:p-10 md:p-9 sm:p-8 p-5"
-      ></div>
-      <div class="container mx-auto py-20 px-4">
-        <div class="flex items-center">
-          <div class="lg:w-1/2 sm:w-2/3 w-full relative z-10">
-            <h3
-              id="mainHeading"
-              class="text-white font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-4xl"
-            ></h3>
-            <p
-              id="smallDescription"
-              class="text-zinc-300 text-sm font-light mt-6"
-            ></p>
+        class="relative bg-black rounded-xl border border-white/30 shadow-2xl shadow-black lg:p-16 md:p-14 sm:p-12 px-3 py-16 overflow-hidden"
+      >
+        <button
+          id="closeWorkPopup"
+          type="button"
+          class="text-white hover:text-violet-500 transition-all absolute sm:top-3 sm:right-4 top-2 right-2 sm:text-3xl text-2xl cursorScale p-2 z-20"
+        >
+          <i class="bi bi-x-lg cursorScale"></i>
+        </button>
+        <div
+          id="workPopupBg"
+          class="absolute top-0 left-0 w-full min-h-[85vh] lg:p-10 md:p-9 sm:p-8 p-5 z-10"
+        ></div>
+        <div class="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 w-full min-h-[85vh] z-10"></div>
+        <div class="container mx-auto py-20 px-4">
+          <div class="flex items-center">
+            <div class="lg:w-2/3 sm:w-3/4 w-full relative z-10">
+              <h3
+                id="mainHeading"
+                class="text-white font-extrabold uppercase lg:text-8xl md:text-7xl sm:text-6xl text-4xl"
+              ></h3>
+              <p
+                id="smallDescription"
+                class="text-zinc-300 text-sm font-light mt-6"
+              ></p>
+            </div>
           </div>
-        </div>
-        <div class="flex justify-end">
-          <i
-            class="bi bi-arrow-90deg-right inline-block rotate-90 text-white text-3xl"
-          ></i>
-        </div>
-        <div class="mt-32 relative z-10">
-          <h3
-            class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase"
-          >
-            experiences
-          </h3>
-          <h3
-            id="experiences"
-            class="text-zinc-300 font-light lg:text-lg sm:text-base text-sm"
-          ></h3>
-          <h3
-            class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase mt-20"
-          >
-            preview
-          </h3>
-          <div class="flex flex-wrap mt-12">
-            <div id="preview1" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
-            <div id="preview2" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
-            <div id="preview3" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
-            <div id="preview4" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
-            <div id="preview5" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
-          </div>
-          <div class="mt-20">
+          <div class="mt-32 relative z-10">
             <h3
               class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase"
             >
-              Description
+              experiences
             </h3>
-            <p id="description" class="text-zinc-300 text-base font-light"></p>
-            <div class="flex justify-end mt-24">
-              <!-- button -->
-              <a
-                id="livePreviewLink"
-                href="#"
-                class="py-3 px-10 rounded-md text-white text-base font-medium cursorScale uppercase relative group overflow-hidden inline-block h-14 transition-all bg-transparent backdrop-blur-md border border-white/10"
+            <h3
+              id="experiences"
+              class="text-zinc-300 font-light lg:text-lg sm:text-base text-sm"
+            ></h3>
+            <h3
+              class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase mt-20"
+            >
+              preview
+            </h3>
+            <div class="flex flex-wrap mt-12">
+              <div id="preview1" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+              <div id="preview2" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+              <div id="preview3" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+              <div id="preview4" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+              <div id="preview5" class="lg:w-1/2 sm:w-2/3 w-full p-2"></div>
+            </div>
+            <div class="mt-20">
+              <h3
+                class="text-white font-extrabold mb-8 lg:text-2xl md:text-xl sm:text-lg text-base uppercase"
               >
-                <span
-                  class="opacity-0 cursorScale flex items-center whitespace-nowrap"
-                  >live preview<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >live preview<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-                <span
-                  class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
-                  >live preview<i
-                    class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
-                  ></i
-                ></span>
-              </a>
+                Description
+              </h3>
+              <p id="description" class="text-zinc-300 sm:text-base text-sm font-light"></p>
+              <div class="flex justify-end mt-24">
+                <!-- button -->
+                <a
+                  id="livePreviewLink"
+                  href="#"
+                  class="py-3 px-10 rounded-md text-white text-base font-medium cursorScale uppercase relative group overflow-hidden inline-block h-14 transition-all bg-transparent backdrop-blur-md border border-white/10"
+                >
+                  <span
+                    class="opacity-0 cursorScale flex items-center whitespace-nowrap"
+                    >live preview<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:top-0 group-hover:-translate-y-full transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >live preview<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-full group-hover:-translate-y-1/2 transitionBtn cursorScale flex items-center whitespace-nowrap"
+                    >live preview<i
+                      class="bi bi-arrow-up-right ps-2 cursorScale leading-3"
+                    ></i
+                  ></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -777,7 +777,7 @@
             <!-- Button -->
             <a
               href="#services"
-              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+              class="py-2 px-5 border border-white/20 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 backdrop-blur-sm"
             >
               <span class="opacity-0 cursorScale whitespace-nowrap"
                 >services</span
@@ -794,7 +794,7 @@
             <!-- Button -->
             <a
               href="#work"
-              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+              class="py-2 px-5 border border-white/20 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 backdrop-blur-sm"
             >
               <span class="opacity-0 cursorScale">work</span>
               <span
@@ -809,7 +809,7 @@
             <!-- Button -->
             <a
               href="#contact"
-              class="py-2 px-5 border border-zinc-600/30 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 bg-zinc-950"
+              class="py-2 px-5 border border-white/20 rounded-full text-white text-xs font-medium cursorScale uppercase relative group overflow-hidden inline-block h-8 transition-all m-1 backdrop-blur-sm"
             >
               <span class="opacity-0 cursorScale">Contact</span>
               <span
@@ -931,8 +931,12 @@
     <!-- Hero section -->
     <main
       id="home"
-      class="min-h-screen flex justify-center items-center overflow-x-hidden"
+      class="min-h-screen flex justify-center items-center overflow-x-hidden relative lg:pb-52 md:pb-40 sm:pb-32 pb-24"
     >
+      <div class="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full -z-[9999]"
+      style="background-image: url('assets/images/mainbg.png');"></div>
+      <div class="absolute top-0 left-0 w-full h-full -z-[999] backdrop-blur-3xl bg-black/20">
+      </div>
       <div class="w-screen">
         <!-- Main text section -->
         <div class="flex justify-center relative overflow-hidden">
@@ -967,12 +971,9 @@
               </div>
               <!-- Button -->
               <div class="mt-10 flex justify-center">
-                <span
-                  class="bg-gradient-to-r from-violet-700 to-red-700 h-[50px] px-[1px] flex justify-center items-center rounded-full overflow-hidden cursorScale"
-                >
-                  <a
+                 <a
                     href="#about"
-                    class="py-4 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all bg-zinc-950 hover:bg-violet-500"
+                    class="py-4 px-10 rounded-full text-white text-sm font-medium cursorScale uppercase relative group overflow-hidden inline-block h-12 transition-all backdrop-blur-sm border border-white/20"
                   >
                     <span
                       class="opacity-0 cursorScale flex items-center whitespace-nowrap"
@@ -990,14 +991,13 @@
                       <i class="bi bi-arrow-down text-lg cursorScale ps-2"></i
                     ></span>
                   </a>
-                </span>
               </div>
             </div>
           </div>
         </div>
         <!-- Animated strips -->
         <div
-          class="lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-bold text-white uppercase overflow-hidden h-96 -mt-10 flex justify-center items-center"
+          class="md:text-7xl sm:text-6xl text-5xl font-extrabold text-white uppercase overflow-hidden h-96 -mt-10 flex justify-center items-center"
         >
           <div>
             <div
@@ -1107,7 +1107,7 @@
     <!-- About section -->
     <section
       id="about"
-      class="bg-violet-950/30 relative lg:rounded-t-[50px] md:rounded-t-[40px] sm:rounded-t-[30px] rounded-t-3xl lg:mt-10"
+      class="bg-violet-950/30 relative lg:rounded-t-[50px] md:rounded-t-[40px] sm:rounded-t-[30px] rounded-t-3xl -mt-32"
     >
       <div
         class="absolute top-0 left-0 w-full h-full -z-10 opacity-10 lg:rounded-t-[50px] md:rounded-t-[40px] sm:rounded-t-[30px] rounded-t-3xl"
